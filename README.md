@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# My Reads
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website was my final project for Udacity's Front-End Web Development Nanodegree. The user of this website can keep track of books that have been read, are being read, or that they want to read.
 
-## Available Scripts
+## Run live
 
-In the project directory, you can run:
+~Run it live at [iverson-myreads.herokuapp.com/](https://iverson-myreads.herokuapp.com/)~
 
-### `npm start`
+## Download
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can get a copy of the project that runs on your local computer by following these instructions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- [Git](https://git-scm.com/downloads)
+- [npm](https://www.npmjs.com/get-npm)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installing
 
-### `npm run build`
+Clone and run the project instructions:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Use the command `$ git clone https://github.com/grantiverson/myreads.git` in Terminal to clone the git project.
+2. Go to the project's root directory by using your browser.
+3. Use the `npm install` command to install the required dependencies.
+4. To start the server, type `npm start` into your terminal. Your browser will launch the webpage automatically as a result.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Built with
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React](https://reactjs.org/) - Text Editor
+- [Create React App](https://github.com/facebookincubator/create-react-app) - React scaffolding package
+- [React Router](https://github.com/ReactTraining/react-router) - Declarative routing for React
+- [Visual Studio Code](https://code.visualstudio.com/) - Text Editor
+- [JavaScript ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Programming Language
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Markup Language
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - Styling
+- [Bootstarp](https://getbootstrap.com/) - CSS FrameWork
+- [Google Chrome](https://www.google.com/chrome/) - Browser and Debugging Tool
 
-### `npm run eject`
+### How I made this app
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I started by utilising [Create React App](https://github.com/facebookincubator/create-react-app) to scaffold out the app. Then I got [BooksAPI.js](https://github.com/udacity/reactnd-project-myreads-starter/tree/master/src/booksAPI.js) from Udacity, which enables me to access data from a mock server . I created the programme that retrieves an array of books from the Udacity server and then maps the array so that each book is shown on the proper shelf using its unique "shelf" key. Each book includes a "select" tag that enables switching between shelves or completely uninstalling the book. Once I had this feature operating, I included a part that allowed users to look for books to add to the shelf. As a query is submitted, this component immediately does a dynamic search of the server for books whose titles match the input. In order to synchronise the URL with the app's state, I utilised [React Router](https://github.com/ReactTraining/react-router).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Youssef Aboalata Youssef {El-Black}** - [GitHub](https://github.com/Yousef-El-Black)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Acknowledgements
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+BooksAPI.js was provided as part of [Udacity's Front-End Web Development Nanodegree](https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001?gclid=CjwKCAjwq_vWBRACEiwAEReprL6RuGAkBbe7XRljOzu9GYr_zQ70LKtonUz_Qev-z0rf07jmNrZNMRoCF9sQAvD_BwE).
