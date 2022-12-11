@@ -2,10 +2,6 @@
 
 This website was my final project for Udacity's Front-End Web Development Nanodegree. The user of this website can keep track of books that have been read, are being read, or that they want to read.
 
-## Run live
-
-~Run it live at [iverson-myreads.herokuapp.com/](https://iverson-myreads.herokuapp.com/)~
-
 ## Download
 
 You can get a copy of the project that runs on your local computer by following these instructions.
