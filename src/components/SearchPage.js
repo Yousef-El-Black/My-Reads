@@ -10,6 +10,7 @@ const SearchPage = ({
   handleNone,
   handleSearch,
   clearSearchedBooks,
+  changeShelf,
 }) => {
   return (
     <>
@@ -62,7 +63,8 @@ const SearchPage = ({
                           <button
                             className="btn bg-white"
                             onClick={() => {
-                              handleCurrentlyReading(book.id);
+                              handleCurrentlyReading(book);
+                              changeShelf(book, "currentlyReading");
                             }}
                           >
                             Currently Reading
@@ -72,7 +74,8 @@ const SearchPage = ({
                           <button
                             className="btn bg-white"
                             onClick={() => {
-                              handleWantToRead(book.id);
+                              handleWantToRead(book);
+                              changeShelf(book, "wantToRead");
                             }}
                           >
                             Want To Read
@@ -82,7 +85,8 @@ const SearchPage = ({
                           <button
                             className="btn bg-white"
                             onClick={() => {
-                              handleRead(book.id);
+                              handleRead(book);
+                              changeShelf(book, "read");
                             }}
                           >
                             Read
@@ -92,7 +96,8 @@ const SearchPage = ({
                           <button
                             className="btn bg-white"
                             onClick={() => {
-                              handleNone(book.id);
+                              handleNone(book);
+                              changeShelf(book, "none");
                             }}
                           >
                             None

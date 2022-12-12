@@ -7,6 +7,7 @@ const CurrentlyReadingList = ({
   handleWantToRead,
   handleRead,
   handleNone,
+  changeShelf,
 }) => {
   return (
     <div className="currently-reading-list ps-3">
@@ -15,7 +16,7 @@ const CurrentlyReadingList = ({
       <ul className="d-flex justify-content-center align-items-center text-center flex-wrap">
         {books
           .filter((book) => {
-            return currentlyReadingBooks.includes(book.id);
+            return currentlyReadingBooks.includes(book);
           })
           .map((book) => {
             return (
@@ -35,7 +36,8 @@ const CurrentlyReadingList = ({
                           <button
                             className="btn bg-white"
                             onClick={() => {
-                              handleCurrentlyReading(book.id);
+                              handleCurrentlyReading(book);
+                              changeShelf(book, "currentlyReading");
                             }}
                           >
                             Currently Reading
@@ -45,7 +47,8 @@ const CurrentlyReadingList = ({
                           <button
                             className="btn bg-white"
                             onClick={() => {
-                              handleWantToRead(book.id);
+                              handleWantToRead(book);
+                              changeShelf(book, "wantToRead");
                             }}
                           >
                             Want To Read
@@ -55,7 +58,8 @@ const CurrentlyReadingList = ({
                           <button
                             className="btn bg-white"
                             onClick={() => {
-                              handleRead(book.id);
+                              handleRead(book);
+                              changeShelf(book, "read");
                             }}
                           >
                             Read
@@ -65,7 +69,8 @@ const CurrentlyReadingList = ({
                           <button
                             className="btn bg-white"
                             onClick={() => {
-                              handleNone(book.id);
+                              handleNone(book);
+                              changeShelf(book, "none");
                             }}
                           >
                             None

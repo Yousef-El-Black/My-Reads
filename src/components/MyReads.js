@@ -12,6 +12,7 @@ const MyReads = ({
   handleNone,
   wantToRead,
   read,
+  changeShelf,
 }) => {
   return (
     <>
@@ -25,6 +26,7 @@ const MyReads = ({
         handleWantToRead={handleWantToRead}
         handleRead={handleRead}
         handleNone={handleNone}
+        changeShelf={changeShelf}
       />
       <WantToReadList
         books={books}
@@ -33,6 +35,7 @@ const MyReads = ({
         handleWantToRead={handleWantToRead}
         handleRead={handleRead}
         handleNone={handleNone}
+        changeShelf={changeShelf}
       />
       <ReadList
         books={books}
@@ -41,6 +44,7 @@ const MyReads = ({
         handleWantToRead={handleWantToRead}
         handleRead={handleRead}
         handleNone={handleNone}
+        changeShelf={changeShelf}
       />
       <Link
         to="/search"
